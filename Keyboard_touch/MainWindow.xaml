@@ -1,0 +1,93 @@
+﻿<Window x:Class="Keyboard_touch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Keyboard_touch"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/> <!--widzialny tekst-->
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <!-- First Row: Single Column Spanning All Columns -->
+        <TextBlock x:Name ="output_Text" Text="" 
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="10"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Background="FloralWhite" FontSize="30" />
+
+        <Button x:Name="b_0" Content="0" Grid.Column="0" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_1" Content="1" Grid.Column="1" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_2" Content="2" Grid.Column="2" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_3" Content="3" Grid.Column="3" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_4" Content="4" Grid.Column="4" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_5" Content="5" Grid.Column="5" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_6" Content="6" Grid.Column="6" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_7" Content="7" Grid.Column="7" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_8" Content="8" Grid.Column="8" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_9" Content="9" Grid.Column="9" Grid.Row="1" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+
+        <Button x:Name="b_Q" Content="Q" Grid.Column="0" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_W" Content="W" Grid.Column="1" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_E" Content="E" Grid.Column="2" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_R" Content="R" Grid.Column="3" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_T" Content="T" Grid.Column="4" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_Y" Content="Y" Grid.Column="5" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_U" Content="U" Grid.Column="6" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_I" Content="I" Grid.Column="7" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_O" Content="O" Grid.Column="8" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_P" Content="P" Grid.Column="9" Grid.Row="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+
+        <Button x:Name="b_A" Content="A" Grid.Column="0" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_S" Content="S" Grid.Column="1" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_D" Content="D" Grid.Column="2" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_F" Content="F" Grid.Column="3" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_G" Content="G" Grid.Column="4" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_H" Content="H" Grid.Column="5" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_J" Content="J" Grid.Column="6" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_K" Content="K" Grid.Column="7" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_L" Content="L" Grid.Column="8" Grid.Row="3" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+
+        <Button x:Name="b_Z" Content="Z" Grid.Column="0" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_X" Content="X" Grid.Column="1" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_C" Content="C" Grid.Column="2" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_V" Content="V" Grid.Column="3" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_B" Content="B" Grid.Column="4" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_N" Content="N" Grid.Column="5" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_M" Content="M" Grid.Column="6" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_Przecinek" Content="," Grid.Column="7" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_Kropka" Content="." Grid.Column="8" Grid.Row="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+
+        <Button x:Name="b_Enter" Content="Enter" Grid.Column="10" Grid.Row="3" Grid.RowSpan ="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_RemoveAll" Content="Remove all" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_Spacja" Content="Space" Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="4" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_Backspace" Content="Backspace" Grid.Column="7" Grid.Row="10" Grid.ColumnSpan="2" FontSize="20" FontWeight="Bold" Background="AntiqueWhite" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+        <Button x:Name="b_Read" Content="Read" Grid.Column="10" Grid.Row="10" Grid.ColumnSpan="2" FontSize="20" FontWeight="Bold" Background="#78f7ff" Margin="2" BorderThickness="3" BorderBrush="Black" KeyDown="SS_KeyDown" />
+
+
+
+
+
+    </Grid>
+</Window>

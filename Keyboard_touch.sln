@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keyboard_touch", "Keyboard_touch\Keyboard_touch.csproj", "{3BD46720-F802-46DB-8A88-9C3C27FFACA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD46720-F802-46DB-8A88-9C3C27FFACA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD46720-F802-46DB-8A88-9C3C27FFACA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD46720-F802-46DB-8A88-9C3C27FFACA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD46720-F802-46DB-8A88-9C3C27FFACA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {909167BF-9FE7-41CF-8C87-62B465C9EFC9}
+	EndGlobalSection
+EndGlobal
